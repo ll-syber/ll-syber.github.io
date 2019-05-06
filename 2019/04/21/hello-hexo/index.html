@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>hello hexo | Fezzker&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="碎碎念">
+  
+  
+  
+  
+  <meta name="description" content="关于博客其实想搭博客这件事儿，已经计划了很久了。 最开始是想自己动手从前端到后端完完整整的实现一遍的，这样会有很大的收获 – 对于一个前端而言。但是下班之后真的提不起劲来做这样一个硕大的工程，而且要实现一个完善可用的博客系统，需要花很长时间去开发、完善、美化。因此在种种理（jie）由（kou）下，就一直搁置了下来。 直到今年春节后，在工作环境发生了些不愉快的事，深感自身水平有限、能力不足。身处安逸">
+<meta name="keywords" content="碎碎念">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello Hexo">
+<meta property="og:url" content="http://www.fezzker.com/blog/2019/04/21/hello-hexo/index.html">
+<meta property="og:site_name" content="Fezzker&#39;s Blog">
+<meta property="og:description" content="关于博客其实想搭博客这件事儿，已经计划了很久了。 最开始是想自己动手从前端到后端完完整整的实现一遍的，这样会有很大的收获 – 对于一个前端而言。但是下班之后真的提不起劲来做这样一个硕大的工程，而且要实现一个完善可用的博客系统，需要花很长时间去开发、完善、美化。因此在种种理（jie）由（kou）下，就一直搁置了下来。 直到今年春节后，在工作环境发生了些不愉快的事，深感自身水平有限、能力不足。身处安逸">
+<meta property="og:locale" content="Chinese">
+<meta property="og:updated_time" content="2019-05-04T14:47:01.281Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hello Hexo">
+<meta name="twitter:description" content="关于博客其实想搭博客这件事儿，已经计划了很久了。 最开始是想自己动手从前端到后端完完整整的实现一遍的，这样会有很大的收获 – 对于一个前端而言。但是下班之后真的提不起劲来做这样一个硕大的工程，而且要实现一个完善可用的博客系统，需要花很长时间去开发、完善、美化。因此在种种理（jie）由（kou）下，就一直搁置了下来。 直到今年春节后，在工作环境发生了些不愉快的事，深感自身水平有限、能力不足。身处安逸">
+  
+    <link rel="alternate" href="/atom.xml" title="Fezzker&#39;s Blog" type="application/atom+xml">
+  
+
+  
+
+  <link rel="icon" href="/blog/css/images/mylogo.jpg">
+  <link rel="apple-touch-icon" href="/blog/css/images/mylogo.jpg">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt; src:url("css/fonts/FuturaPTBold.otf") format("woff");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt-light; src:url("css/fonts/FuturaPTBook.otf") format("woff");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt-italic; src:url("css/fonts/FuturaPTBookOblique.otf") format("woff");font-weight:400;font-style:italic;}
+}
+
+  </style>
+  <link rel="stylesheet" href="/blog/css/style.css">
+
+  <script src="/blog/js/jquery-3.1.1.min.js"></script>
+  <script src="/blog/js/bootstrap.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/blog/css/bootstrap.css">
+
+  
+    <link rel="stylesheet" href="/blog/css/dialog.css">
+  
+
+  
+
+  
+    <link rel="stylesheet" href="/blog/css/header-post.css">
+  
+
+  
+  
+  
+
+</head>
+</html>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;" href="#" data-toggle="modal" data-target="#myModal">
+                  <img width="124px" height="124px" alt="Hike News" src="/blog/css/images/mylogo.jpg">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/blog/">Home</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/blog/archives">Archives</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/blog/categories">Categories</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/blog/tags">Tags</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/blog/about">About</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder>
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/blog/',
+        CONTENT_URL: '/blog/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/blog/js/insight.js"></script>
+
+</div></li>
+            </ul></div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-hello-hexo" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      Hello Hexo
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/blog/2019/04/21/hello-hexo/" class="article-date">
+	  <time datetime="2019-04-21T13:48:25.000Z" itemprop="datePublished">2019-04-21</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/blog/categories/杂记/">杂记</a>
+
+      
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		PV:<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="关于博客"><a href="#关于博客" class="headerlink" title="关于博客"></a>关于博客</h1><p>其实想搭博客这件事儿，已经计划了很久了。</p>
+<p>最开始是想自己动手从前端到后端完完整整的实现一遍的，这样会有很大的收获 – 对于一个前端而言。但是下班之后真的提不起劲来做这样一个硕大的工程，而且要实现一个完善可用的博客系统，需要花很长时间去开发、完善、美化。因此在种种理（jie）由（kou）下，就一直搁置了下来。</p>
+<p>直到今年春节后，在工作环境发生了些不愉快的事，深感自身水平有限、能力不足。身处安逸区，心在焦虑区，状态很不好，又迫切的想要提升自己。但我清楚自己内驱力不足，没有实际压力就没有动力学习，因此又想起了这个“博客计划”。</p>
+<p>定期更新博客，一来是给自己定一个实际可见的学习安排，二来也可以将学习心得落于纸面，得到一定的正反馈。虽然不能保证更新博客的压力能带来多少的紧迫感，但至少比空手投入学习要好很多。</p>
+<h1 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h1><blockquote>
+<p>搭建博客的过程十分不顺，因此我加了个 tag 叫 <code>碎碎念</code>，来抒发一下愤懑。</p>
+</blockquote>
+<p>首先是博客的方案选型：</p>
+<ul>
+<li>自己完整地实现一个博客系统：这个首先 pass，如果选择了这个方案，我可以想象到我往后的业余生活全搭在这上面了，况且没必要重复造轮子嘛。</li>
+<li>用一个博客框架搭建博客：这个不错，值得考虑</li>
+<li>使用“博客园”、“简书”等网站记录博客：作为一个<del>有追求的</del>前端，这也太 low 了，一点都不 geek。</li>
+</ul>
+<p>在多方咨询和查询后，我选则了 <code>Hexo</code>，js 语言，纯静态，基本满足我的需求。没想到正式上手搭建博客就是噩梦的开始。</p>
+<p>完成博客选型后，我准备先把服务器搞定：</p>
+<ol>
+<li>18年买了一个腾讯的特价服务器一直没用，还剩一年有效期。</li>
+<li>于是又在腾讯云买了域名，还行不贵。</li>
+<li>搭了环境，装了 Nginx，到这为止都还算顺利。</li>
+<li>国内服务器，域名需要备案；我人在上海，上海备案需要“居住证”，wtf？？？北京备案都不需要“居住证”。况且我搭个网站还得先证明我有在本地居住的资格？？？</li>
+<li>去年年底因为一些忙的不可开交的原因，没有去办理“居住证”。“租赁备案”还在有效期内，但今年年初换了个住处，不知道原“租赁备案”还是否可用。带着侥幸心理去尝试办了一下，果不其然失败了。来回查证等流程带走了两周时间。</li>
+<li>和朋友讨论了一下，排除了几个费时费力的方案之后，准备把博客搭在国外服务器上。</li>
+<li>货比三家之后，选则了 <code>linode</code>，但他家只接受境外信用卡，而且好贵，5刀/月。（这些年境外服务器商基本也都在往高端做，大多数厂商的最低价就是5刀/月。搬瓦工有稍微便宜一点点的套餐且能用支付宝，不过被朋友吐槽服务器不稳定了，vultr 试了试好像因为新人优惠套餐原因支付宝付不了）</li>
+<li>申请了交行的“优逸白金套卡”，一周后拿到卡，结果只有一张国内的信用卡，联系了三遍客服无法解决，最后销卡了，一套流程下来又是两周。（第一次在线填写因为不知道公司电话，放弃了提交。但是交行神奇的流程设置居然是分段提交的，第二天有客户经理电话联系我补全信息，我着重强调了我需要套卡，而不是国内卡。我觉得问题十有八九出在这个客户经理身上，如果知道信息我一定要投诉！！！）</li>
+<li><del>最后我的计划是找朋友代为帮我购买服务器</del>买啥服务器，搭github完事儿，从想搭博客开始到这里已经是一个半月了，我也不急了，准备把博客内容充实一下，服务器到时候再说。</li>
+</ol>
+<p>从尝试办理居住证开始，我开始了第二手打算，准备同步把博客在本地先初始化好。hexo 的上手其实比较简单啦，文档也不多。后续遇到的所有问题基本都可以总结为一句话：强迫症害死个人啊！</p>
+<ol>
+<li>找看的顺眼的主题花了我非常大的精力，前前后后试用了9个主题</li>
+<li><code>Next</code> 虽然（可能）是最方便的 Hexo 主题，但因为太没辨识度，被我 pass 了</li>
+<li>某主题 A 是我第一个比较顺眼的主题，但是没有代码高亮，花了大力气给主题补上了 Google 的 <code>code-prettify</code>，随后发现这个效果太丑了，遂放弃</li>
+<li>某主题 B 安装上之后，页面不展示且报了8个错。花了一晚上修了仨，看了看原作者的 github 两年没更新了，后面还不知道有多少坑，年久失修修个蛋，遂放弃。</li>
+<li>现在选则的是 <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank" rel="noopener">Hiker</a> 主题。</li>
+<li>原本还想接入 <a href="https://commentit.io/" target="_blank" rel="noopener">Comm(ent|it)</a> 来管理评论的，研究了一下 <code>Hiker</code> 自带的 <code>livere</code> 感觉不会突然暴毙，可以安心使用，就不自己折腾了。</li>
+</ol>
+<h1 id="第一篇博客"><a href="#第一篇博客" class="headerlink" title="第一篇博客"></a>第一篇博客</h1><p>这篇博客是我搭建完成后的第一篇博客，我将对博客的用途做一下规划：</p>
+<ul>
+<li>记录学习心得，包括：日常工作收获、各种学习课程的笔记等</li>
+<li>记录生活中一些有感而发的看法。</li>
+<li>最低限度：至少保证每周一篇。</li>
+</ul>
+<h1 id="Todos"><a href="#Todos" class="headerlink" title="Todos"></a>Todos</h1><p>这个博客现在还是个半成品，还有不少事情要做：</p>
+<ol>
+<li><del>修复 <code>Categories</code> &amp; <code>Tags</code> 两个目录不展现的问题</del> – 完成</li>
+<li><del>购买服务器，绑定域名，并完成线上搭建</del>github静态博客走起</li>
+<li><code>livere</code> 的注册，这个需要有在线网站才行；开启评论功能</li>
+</ol>
+<h1 id="END"><a href="#END" class="headerlink" title="END"></a>END</h1><p>暂时就先写这些，路漫漫其修远兮，自勉。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      <div>
+        <ul class="post-copyright">
+          <li class="post-copyright-author">
+          <strong>Post author:  </strong>fezzker
+          </li>
+          <li class="post-copyright-link">
+          <strong>Post link:  </strong>
+          <a href="/blog/2019/04/21/hello-hexo/" target="_blank" title="Hello Hexo">http://www.fezzker.com/blog/2019/04/21/hello-hexo/</a>
+          </li>
+          <li class="post-copyright-license">
+            <strong>Copyright Notice:   </strong>
+            All articles in this blog are licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+            unless stating additionally.
+          </li>
+         
+        </ul>
+<div>
+</div></div>
+      
+      
+      
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/碎碎念/">碎碎念</a></li></ul>
+
+      
+
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于博客"><span class="nav-number">1.</span> <span class="nav-text">关于博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建博客"><span class="nav-number">2.</span> <span class="nav-text">搭建博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第一篇博客"><span class="nav-number">3.</span> <span class="nav-text">第一篇博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Todos"><span class="nav-number">4.</span> <span class="nav-text">Todos</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#END"><span class="nav-number">5.</span> <span class="nav-text">END</span></a></li></ol>
+    
+    </div>
+  </aside>
+
+</section>
+        
+      </div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2019 Fezzker&#39;s Blog All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				UV : <span id="busuanzi_value_site_uv"></span> |  
+				PV : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/blog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/blog/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css">
+  <script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/blog/js/scripts.js"></script>
+
+
+
+
+  <script src="/blog/js/dialog.js"></script>
+
+
+
+
+
+
+
+
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Fezzker&#39;s Blog
+          </div>
+          <div class="panel-body">
+            Copyright © 2019 fezzker All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
+  
+</body>
+</html>
